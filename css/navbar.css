@@ -1,0 +1,516 @@
+/* #top-menu {
+    background-color: #ffffff;
+} */
+
+#category {
+    display: flex;
+    align-items: center;
+}
+
+#category a {
+    display: inline-block;
+}
+
+#category a:hover {
+    color: red;
+}
+
+.animation {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 88%;
+    height: 2px;
+    top: 0;
+    z-index: 1;
+    background: #1abc9c;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#category span:hover ~ .animation {
+    visibility: visible;
+    width: 88%;
+    transition: 0.8s;
+    opacity: 1;
+    color: red;
+}
+
+.item a {
+    color: #6f6f6f;
+    font-size: 14px;
+    /* position: relative; */
+}
+
+.item,
+.subitem {
+    line-height: 300%;
+    position: relative;
+    z-index: 1;
+}
+
+.subitem {
+    width: 260px;
+    padding-right: 5px;
+    border-left: 1px solid #ccc;
+}
+
+.subitem a {
+    color: #6f6f6f;
+    font-size: 14px;
+    width: 260px;
+}
+
+.after-text {
+    position: absolute;
+    right: 30px;
+    top: -1px;
+}
+.submenu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 48px;
+    right: -8px;
+    line-height: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.subitem:hover {
+    background-color: #ccc;
+    transition: 0.5s;
+    color: red;
+}
+
+.item:hover > .submenu,
+.subitem:hover > .submenu {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.details {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 260px;
+    top: 0;
+    width: 1380px;
+    height: 480px;
+    line-height: 30px;
+}
+
+.item:hover > .details,
+.subitem:hover > .details {
+    visibility: visible;
+    opacity: 1;
+}
+
+.angle {
+    position: absolute;
+    right: 170px;
+}
+
+.angle1 {
+    position: absolute;
+    right: 205px;
+}
+
+.angle2 {
+    position: absolute;
+    right: 160px;
+}
+
+.angle3 {
+    position: absolute;
+    right: 198px;
+}
+
+.angle4 {
+    position: absolute;
+    right: 198px;
+}
+
+.angle5 {
+    position: absolute;
+    right: 190px;
+}
+
+.angle6 {
+    position: absolute;
+    right: 205px;
+}
+
+.angle7 {
+    position: absolute;
+    right: 215px;
+}
+
+.angle8 {
+    position: absolute;
+    right: 163px;
+}
+
+.angle9 {
+    position: absolute;
+    right: 220px;
+}
+
+.details ul {
+    float: right;
+    width: 276px;
+    text-align: right;
+}
+
+.details i {
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.details a {
+    color: #6f6f6f;
+    font-size: 12px;
+}
+
+.img-level img {
+    margin-top: 15px;
+    border-radius: 5%;
+}
+
+.details1 {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 260px;
+    top: -48px;
+    width: 1380px;
+    height: 480px;
+    line-height: 30px;
+}
+
+.item:hover > .details1,
+.subitem:hover > .details1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.details1 ul {
+    float: right;
+    width: 276px;
+    text-align: right;
+}
+
+.details1 i {
+    vertical-align: middle;
+    padding-right: 8px;
+}
+
+.details1 a {
+    color: #6f6f6f;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.details2 {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 260px;
+    top: -96px;
+    width: 1380px;
+    height: 480px;
+    line-height: 30px;
+}
+
+.item:hover > .details2,
+.subitem:hover > .details2 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.details2 ul {
+    float: right;
+    width: 276px;
+    text-align: right;
+}
+
+.details2 i {
+    vertical-align: middle;
+    padding-right: 8px;
+}
+
+.details2 a {
+    color: #6f6f6f;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.clothes-img {
+    position: absolute;
+    right: 140px;
+    z-index: 2;
+}
+
+.details3 {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 260px;
+    top: -144px;
+    width: 1380px;
+    height: 480px;
+    line-height: 30px;
+}
+
+.item:hover > .details3,
+.subitem:hover > .details3 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.details3 ul {
+    float: right;
+    width: 276px;
+    text-align: right;
+}
+
+.details3 i {
+    vertical-align: middle;
+    padding-right: 8px;
+}
+
+.details3 a {
+    color: #6f6f6f;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.details4 {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 260px;
+    top: -192px;
+    width: 1380px;
+    height: 480px;
+    line-height: 30px;
+}
+
+.item:hover > .details4,
+.subitem:hover > .details4 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.details4 ul {
+    float: right;
+    width: 276px;
+    text-align: right;
+}
+
+.details4 i {
+    vertical-align: middle;
+    padding-right: 8px;
+}
+
+.details4 a {
+    color: #6f6f6f;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.details5 {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 260px;
+    top: -240px;
+    width: 1380px;
+    height: 480px;
+    line-height: 30px;
+}
+
+.item:hover > .details5,
+.subitem:hover > .details5 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.details5 ul {
+    float: right;
+    width: 276px;
+    text-align: right;
+}
+
+.details5 i {
+    vertical-align: middle;
+    padding-right: 8px;
+}
+
+.details5 a {
+    color: #6f6f6f;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.details6 {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 260px;
+    top: -288px;
+    width: 1380px;
+    height: 480px;
+    line-height: 30px;
+}
+
+.item:hover > .details6,
+.subitem:hover > .details6 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.details6 ul {
+    float: right;
+    width: 276px;
+    text-align: right;
+}
+
+.details6 i {
+    vertical-align: middle;
+    padding-right: 8px;
+}
+
+.details6 a {
+    color: #6f6f6f;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.details7 {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 260px;
+    top: -336px;
+    width: 1380px;
+    height: 480px;
+    line-height: 30px;
+}
+
+.item:hover > .details7,
+.subitem:hover > .details7 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.details7 ul {
+    float: right;
+    width: 276px;
+    text-align: right;
+}
+
+.details7 i {
+    vertical-align: middle;
+    padding-right: 8px;
+}
+
+.details7 a {
+    color: #6f6f6f;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.details8 {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 260px;
+    top: -384px;
+    width: 1380px;
+    height: 480px;
+    line-height: 30px;
+}
+
+.item:hover > .details8,
+.subitem:hover > .details8 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.details8 ul {
+    float: right;
+    width: 276px;
+    text-align: right;
+}
+
+.details8 i {
+    vertical-align: middle;
+    padding-right: 8px;
+}
+
+.details8 a {
+    color: #6f6f6f;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.details9 {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 260px;
+    top: -432px;
+    width: 1380px;
+    height: 480px;
+    line-height: 30px;
+}
+
+.item:hover > .details9,
+.subitem:hover > .details9 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.details9 ul {
+    float: right;
+    width: 450px;
+    text-align: right;
+}
+
+.details9 i {
+    vertical-align: middle;
+    padding-right: 8px;
+}
+
+.details9 a {
+    color: #6f6f6f;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.nav-left a {
+    color: #616161;
+    font-size: 13px;
+}
