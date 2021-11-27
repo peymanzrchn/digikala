@@ -8,14 +8,6 @@ main {
     height: 0;
 }
 
-canvas {
-    margin: 0 !important;
-    padding: 0 !important;
-    border: 0 !important;
-    width: 0 !important;
-    height: 0 !important;
-}
-
 .container-fluid {
     max-width: 1620px;
 }
