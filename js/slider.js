@@ -1,9 +1,8 @@
-new SmoothScroll('a[href*="#"]', {
-    easing: "linear",
-    speed: 1000,
+$(function () {
+    $("*").on("click", function (e) {
+        e.preventDefault();
+    });
 });
-
-new WOW().init();
 
 $("#owl-one").owlCarousel({
     autoplay: false,

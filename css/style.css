@@ -200,18 +200,17 @@ a:hover {
 }
 
 .prices {
-    position: relative;
-    left: -20px;
-    top: 5px;
-    line-height: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 270px;
 }
 
 .card-footer {
     border: none;
     background: none;
-    position: relative;
-    left: -20px;
-    top: 5px;
+    position: absolute;
+    left: 0;
+    top: 365px;
 }
 
 .card-footer span {
