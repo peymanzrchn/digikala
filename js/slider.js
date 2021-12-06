@@ -2,6 +2,15 @@ $(function () {
     $("*").on("click", function (e) {
         e.preventDefault();
     });
+
+    $(".return-home a").on("click", function () {
+        $("html , body").animate(
+            {
+                scrollTop: "0px",
+            },
+            1000
+        );
+    });
 });
 
 $("#owl-one").owlCarousel({
